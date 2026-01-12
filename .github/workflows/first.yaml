@@ -11,7 +11,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Say Hello to first workflow by abdi 
+      - name: Say Hello to first workflow by abdi-- 
         run: echo "Hello, World! from Abdi"
 
       - name: multi line script
