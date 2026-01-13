@@ -1,9 +1,9 @@
-879381241087.dkr.ecr.ap-south-1.amazonaws.com/nov25-class5
+490004651290.dkr.ecr.us-east-2.amazonaws.com/nov25-class5
 
 <aws_account_id>.dkr.ecr.<aws_region>.amazonaws.com/<repo_name>
 
 
-docker build -t 879381241087.dkr.ecr.ap-south-1.amazonaws.com/nov25-class5:1.0 .
+docker build -t  879381241087.dkr.ecr.ap-south-1.amazonaws.com/nov25-class5:1.0 .z
 
 
 # aws cli install
@@ -56,7 +56,7 @@ host nov25-class5.cvik8accw2tk.ap-south-1.rds.amazonaws.com
 port 5432
 
 dbname: postgres
-
+789a88c9e76a 
 
 export DATABASE_URL=postgresql://postgres:Admin123@nov25-class5.cvik8accw2tk.ap-south-1.rds.amazonaws.com:5432/postgres
 
