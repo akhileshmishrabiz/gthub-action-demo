@@ -7,6 +7,7 @@ on:
         description: 'Path to the application'
         required: false
         default: './app'
+        
       tag:
         description: 'Docker image tag'
         required: false
@@ -15,11 +16,11 @@ on:
       ecr_repo:
         description: 'ECR Repository name'
         required: false
-        default: 'nov25-class5'
+        default: 'nginx/vishnu'
 
 env:
   ecr_repo: ${{ github.event.inputs.ecr_repo }}
-  aws_region: ap-south-1
+  aws_region: us-east-2
   path: ${{ github.event.inputs.path }}
   tag: ${{ github.event.inputs.tag }}
 
@@ -35,7 +36,7 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v5.1.1
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.aws_region }}
 
